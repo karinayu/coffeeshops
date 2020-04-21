@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <title>Кофейные места</title>
+</head>
+<body>
+    <nav id="menu" class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+    <span class="font-semibold text-xl tracking-tight">Кофейные места</span>
+  </div>
+  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div class="text-sm lg:flex-grow">
+      <a href="#1" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Floo
+      </a>
+      <a href="#2" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Coffee point
+      </a>
+      <a href="#3" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+        ABC Roasters
+      </a>
+    </div>
+    <div class="text-sm lg:flex-grow">
+      <a onclick=location.href="index.fb2" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" download>Скачать файл</a>
+    </div>
+    <div>
+      <form class="w-full max-w-sm">
+          <div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+              <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Поиск" autofocus>
+              <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value="+" title="Начать поиск">
+              Начать
+              </button>
+              <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" class="button_for_turn_back" onclick="javascript: FindOnPage('text-to-find',false); return false;" value="-" title="Отменить поиск">
+              Отмена
+              </button>
+          </div>
+        </form>
+    </div>
+  </div>
+</nav>
+
+<div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="https://i5.photo.2gis.com/images/branch/32/4503599667947165_165c.jpg" style="width:100%">
+          <div class="text">Floo</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/14d43446962827.586bf34191123.jpg" style="width:100%">
+          <div class="text">POINT COFFEE&FOOD</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://i4.photo.2gis.com/images/branch/32/4503599670168924_9344.jpg" style="width:100%">
+          <div class="text">ABC Coffee Roasters</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <div id="1" class="max-w-sm w-full lg:max-w-full lg:flex m-8">
+          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('floo.png')">
+          </div>
+          <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="mb-8">
+              <div class="text-gray-900 font-bold text-xl mb-2">Кофейня Floo</div>
+              <p class="text-gray-700 text-base">Кофейня flo͞o</p>
+              <p class="text-gray-700 text-base">Кофе и люди 🙌🏻</p>
+                Пн-Пт 8:00–22:00
+                Сб-Вс 10:00–22:00
+                Завтраки целый день и бранчи по выходным 🍳</p>
+            </div>
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full mr-4" src="flooinst.png" alt="Кофейня Floo">
+              <div class="text-sm">
+                <p class="text-gray-900 leading-none">Адрес</p>
+                <p class="text-gray-600">Инстаграм</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div id="2" class="max-w-sm w-full lg:max-w-full lg:flex m-8">
+          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('point.png')" title="Woman holding a mug">
+          </div>
+          <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="mb-8">
+              <div class="text-gray-900 font-bold text-xl mb-2">Кофейня POINT COFFEE&FOOD</div>
+              <p class="text-gray-700 text-base">Правильный кофе и авторская еда. Черная пятница каждую неделю. Своя обжарка🍳</p>
+              <p class="text-gray-700 text-base">Пн-Пт 8:00-22:00
+                Сб-Вс 10:00-22:00</p>
+            </div>
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full mr-4" src="https://static.wixstatic.com/media/f49111_e75f7bc45b2f48549db06ea53591d1eb~mv2_d_3054_2233_s_2.jpg">
+              <div class="text-sm">
+                <p class="text-gray-900 leading-none">Адрес</p>
+                <p class="text-gray-600">Инстаграм</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="3" class="max-w-sm w-full lg:max-w-full lg:flex m-8">
+          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('abc.png')">
+          </div>
+          <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="mb-8">
+              <div class="text-gray-900 font-bold text-xl mb-2">Кофейня ABC Coffee Roasters</div>
+              <p class="text-gray-700 text-base">COFFEE / INNOVATION / EXPERIENCE 
+                • FIVE AMAZING LOCATIONS NOW OPEN 
+              </p>
+              <p class="text-gray-700 text-base">
+                • THINK COFFEE • DRINK DIFFERENT
+              </p>
+              <p class="text-gray-700 text-base">Наша работа - это кульминация нашей любви к кофе.</p>
+              <p class="text-gray-700 text-base">Стремление раскрыть зерно на пике вкуса и постоянные поиски инноваций - все это</p>
+              <p class="text-gray-700 text-base">сосредоточено в вашей чашке.</p>
+            </div>
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full mr-4" src="https://cdn.the-village.ru/the-village.ru/post_image-image/HaJzVvAQRF98xMi6hO5UOg-article.jpg">
+              <div class="text-sm">
+                <p class="text-gray-900 leading-none">Адрес</p>
+                <p class="text-gray-600">Инстаграм</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <video controls>
+          <source src="abc.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        </video>
+<script type="text/javascript">
+  var input,search,pr,result,result_arr, locale_HTML, result_store;
+
+function func() {
+ 	locale_HTML = document.body.innerHTML;   // сохраняем в переменную весь body (Первоначальный)
+}
+setTimeout(func, 1000);  //ждем подгрузки Jsona и выполняем
+
+function FindOnPage(name, status) {
+
+	input = document.getElementById(name).value; //получаем значение из поля в html
+	
+	if(input.length<3&&status==true)
+	{
+		alert('Для поиска вы должны ввести три или более символов');
+		function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
+	}
+	
+	if(input.length>=3)
+	{
+		function FindOnPageGo() {
+
+			search = '/'+input+'/g';  //делаем из строки регуярное выражение
+			pr = document.body.innerHTML;   // сохраняем в переменную весь body
+			result = pr.match(/>(.*?)</g);  //отсекаем все теги и получаем только текст
+			result_arr = [];   //в этом массиве будем хранить результат работы (подсветку)
+
+			var warning = true;
+			for(var i=0;i<result.length;i++) {
+				if(result[i].match(eval(search))!=null) {
+					warning = false;
+				}
+			}
+			if(warning == true) {
+				alert('Не найдено ни одного совпадения');
+			}
+
+			for(var i=0; i<result.length;i++) {
+				result_arr[i] = result[i].replace(eval(search), '<span style="background-color:yellow;">'+input+'</span>'); //находим нужные элементы, задаем стиль и сохраняем в новый массив
+			}
+			for(var i=0; i<result.length;i++) {
+				pr=pr.replace(result[i],result_arr[i])  //заменяем в переменной с html текст на новый из новогом ассива
+			}
+			document.body.innerHTML = pr;  //заменяем html код
+		}
+	}
+	function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
+	if(status) { FindOnPageBack(); FindOnPageGo(); } //чистим прошлое и Выделяем найденное
+	if(!status) { FindOnPageBack(); } //Снимаем выделение
+}
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
